@@ -1,0 +1,254 @@
+Solr Reference Guide 9.4（https://solr.apache.org/guide/solr/latest/index.html）
+
+- Getting Started
+    - [x] Introduction to Solr
+  - Solr Concepts
+    - [x] Documents, Fields, and Schema Design
+    - [x] Solr Indexing
+    - [x] Searching in Solr
+    - [x] Relevance
+    - [ ] Solr Glossary
+  - Solr Tutorials
+    - [x] Exercise 0: Five Minutes to Searching!
+    - [x] Exercise 1: Index Techproducts Data
+    - [x] Exercise 2: Index Films Data
+    - [x] Exercise 3: Index Your Own Data
+    - [x] Getting Started with SolrCloud
+    - [ ] SolrCloud on AWS EC2
+  - [x] Solr Admin UI
+  - [x] About This Guide
+- Deployment Guide
+  - [x] Solr Control Script Reference
+  - Installation & Deployment
+    - [x] System Requirements
+    - [x] Installing Solr
+    - [x] Taking Solr to Production
+    - [x] JVM Settings
+    - [ ] Upgrading a Solr Cluster
+      - [ ] IndexUpgraderTool
+    - [ ] Backup and Restore
+    - [x] Solr in Docker
+      - [ ] Solr Docker FAQ
+      - [ ] Solr & ZooKeeper with Docker Networking
+    - [ ] Solr on HDFS
+  - Scaling Solr
+    - [x] Solr Cluster Types
+    - User-Managed Clusters
+      - [ ] User-Managed Index Replication
+      - [ ] User-Managed Distributed Search
+    - SolrCloud Clusters
+      - [x] SolrCloud Shards and Indexing
+      - [x] SolrCloud Recoveries and Write Tolerance
+      - [x] SolrCloud Distributed Requests
+      - [x] Node Roles
+      - [x] Aliases
+      - Collections API
+        - [ ] Cluster and Node Management Commands
+        - [ ] Collection Management Commands
+        - [ ] Shard Management Commands
+        - [ ] Replica Management Commands
+        - [ ] Alias Management
+      - ZooKeeper Configuration
+        - [x] ZooKeeper Ensemble Configuration
+        - [x] ZooKeeper File Management
+        - [x] ZooKeeper Utilities
+        - [x] SolrCloud with Legacy Configuration Files
+      - Admin UI
+        - [x] Collections / Core Admin
+        - [x] Cloud Screens
+  - Monitoring Solr
+    - [x] Configuring Logging
+    - [x] Ping
+    - [x] Metrics Reporting
+    - [x] Performance Statistics Reference
+    - [x] Plugins & Stats Screen
+    - [x] MBean Request Handler
+    - [x] Monitoring with Prometheus and Grafana
+    - [x] JMX with Solr
+    - [x] Thread Dump Screen
+    - [x] Distributed Tracing
+    - [x] Circuit Breakers
+    - [x] Request Rate Limiters
+    - [x] Task Management
+  - [x] Securing Solr
+    - [x] Configuring Authentication and Authorization
+      - [x] Basic Authentication Plugin
+      - [ ] Kerberos Authentication Plugin
+      - [ ] JWT Authentication Plugin
+      - [ ] Certificate Authentication Plugin
+      - [ ] Hadoop Authentication Plugin
+      - [ ] Rule-Based Authorization Plugins
+    - [x] Audit Logging
+    - [x] Enabling SSL
+    - [x] ZooKeeper Access Control
+    - [x] Security UI
+  - [ ] Client APIs
+    - [ ] SolrJ
+    - [ ] JavaScript
+    - [ ] Python
+    - [ ] Ruby
+- Configuration Guide
+  - [x] Solr Configuration Files
+  - [x] Property Substitution in Configuration Files
+  - [x] Core Discovery
+  - [x] Configuring solr.xml
+  - [x] Configuring solrconfig.xml
+    - [x] Index Location and Format
+    - [x] Index Segments and Merging
+    - [x] Schema Factory Configuration
+    - [x] Commits and Transaction Logs
+    - [x] Caches and Query Warming
+    - [x] Request Handlers and Search Components
+    - [x] Implicit Request Handlers
+    - [x] RealTime Get
+    - [x] InitParams
+    - [x] RequestDispatcher
+    - [x] Update Request Processors
+    - [x] Script Update Processor
+    - [x] Codec Factory
+  - Configuration APIs
+    - [ ] Config API
+    - [ ] Request Parameters API
+    - [ ] Managed Resources
+    - [ ] Collections API
+    - [ ] Configsets API
+    - [ ] CoreAdmin API
+    - [ ] v2 API
+  - [x] Configsets
+  - [x] Resource Loading
+  - [x] Solr Plugins
+    - [x] Lib Directories and Directives
+    - [x] Solr Modules
+    - [x] Package Management
+      - [ ] Package Manager Internals
+    - [x] Cluster Plugins
+    - [x] Replica Placement Plugins
+- Schema and Indexing Guide
+  - Solr Schema
+    - [x] Schema Elements
+    - [ ] Schema API
+    - [x] Schemaless Mode
+    - [x] Schema Designer
+    - [x] Schema Browser Screen
+  - Fields & Schema Design
+    - [x] Fields
+    - Field Types
+      - [x] Field Type Definitions and Properties
+      - [x] Field Types Included with Solr
+      - [ ] Currencies and Exchange Rates
+      - [x] Date Formatting and Date Math
+      - [x] Enum Fields
+      - [x] External Files and Processes
+      - [x] Field Properties by Use Case
+    - [x] Copy Fields
+    - [x] Dynamic Fields
+    - [x] DocValues
+    - [x] Luke Request Handler
+  - [x] Document Analysis in Solr
+    - [x] Analyzers
+    - [x] Tokenizers
+    - [x] Filters
+    - [x] CharFilters
+    - [x] Language Analysis
+    - [x] Phonetic Matching
+    - [x] Analysis Screen
+  - Indexing & Data Operations
+    - [x] Indexing with Update Handlers
+      - [x] Transforming and Indexing Custom JSON
+    - [x] Indexing with Update CBOR data format
+    - [x] Indexing with Solr Cell and Apache Tika
+    - [x] Indexing Nested Documents
+    - [x] Post Tool
+    - [x] Documents Screen
+    - [x] Partial Document Updates
+    - [x] Reindexing
+    - [x] Language Detection
+    - [x] De-Duplication
+    - [x] Content Streams
+- Query Guide
+  - [x] Query Syntax and Parsers
+    - [x] Common Query Parameters
+    - [x] Standard Query Parser
+    - [x] DisMax Query Parser
+    - [x] Extended DisMax (eDisMax) Query Parser
+    - [x] Function Queries
+    - [x] Local Params
+    - [ ] JSON Request API
+      - [ ] JSON Query DSL
+    - [x] Searching Nested Child Documents
+    - [ ] Block Join Query Parser
+    - [ ] Join Query Parser
+    - [ ] Spatial Search
+    - [x] Dense Vector Search
+    - [ ] Other Query Parsers
+    - [ ] SQL Query Language
+      - [ ] JDBC with DbVisualizer
+      - [ ] JDBC with SQuirreL SQL
+      - [ ] JDBC with Apache Zeppelin
+      - [ ] JDBC with Python/Jython
+      - [ ] JDBC with R
+    - [x] Query Screen
+    - [x] SQL Query Screen
+  - Enhancing Queries
+    - [x] Spell Checking
+    - [x] Suggester
+    - [x] MoreLikeThis
+    - [x] Query Re-Ranking
+    - [x] Learning To Rank
+    - [x] Tagger Handler
+    - [ ] Analytics Component
+      - [ ] Analytics Expression Sources
+      - [ ] Analytics Mapping Functions
+      - [ ] Analytics Reduction Functions
+    - [x] Terms Component
+    - [x] Term Vector Component
+    - [x] Stats Component
+  - Controlling Results
+    - [x] Faceting
+    - [ ] JSON Facet API
+      - [ ] JSON Faceting Domain Changes
+    - [x] Collapse and Expand Results
+    - [x] Result Grouping
+    - [x] Result Clustering
+    - [x] Highlighting
+    - [x] Query Elevation Component
+    - [x] Document Transformers
+    - [x] Response Writers
+    - [x] Exporting Result Sets
+    - [x] Pagination of Results
+  - [x] Streaming Expressions
+    - [ ] Stream Source Reference
+    - [ ] Stream Decorator Reference
+    - [ ] Stream Evaluator Reference
+    - [ ] Streaming Expressions and Math Expressions
+      - [ ] Visualization
+      - [ ] Getting Started
+      - [ ] Loading Data
+      - [ ] Searching, Sampling and Aggregation
+      - [ ] Transforming Data
+      - [ ] Scalar Math
+      - [ ] Vector Math
+      - [ ] Variables
+      - [ ] Matrices and Matrix Math
+      - [ ] Text Analysis and Term Vectors
+      - [ ] Probability Distributions
+      - [ ] Statistics
+      - [ ] Linear Regression
+      - [ ] Curve Fitting
+      - [ ] Time Series
+      - [ ] Interpolation, Derivatives and Integrals
+      - [ ] Digital Signal Processing
+      - [ ] Monte Carlo Simulations
+      - [ ] Machine Learning
+      - [ ] Graph
+      - [ ] Computational Geometry
+      - [ ] Log Analytics
+    - [ ] Graph Traversal
+    - [ ] Stream Request Handler API
+    - [x] Stream Screen
+- [ ] Solr Upgrade Notes
+  - [ ] Major Changes in Solr 9
+  - [ ] Major Changes in Solr 8
+  - [ ] Major Changes in Solr 7
+  - [ ] Major Changes in Solr 6
+- [ ] How To Contribute
