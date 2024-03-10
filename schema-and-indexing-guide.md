@@ -1,3 +1,24 @@
+- [Schema Elements](#schema-elements)
+  - [Unique Key](#unique-key)
+  - [Similarity](#similarity)
+- [Field Type Definitions and Properties](#field-type-definitions-and-properties)
+  - [Field Type Properties](#field-type-properties)
+    - [General Properties](#general-properties)
+- [Analyzers](#analyzers)
+  - [Analysis for Multi-Term Expansion](#analysis-for-multi-term-expansion)
+- [Tokenizers](#tokenizers)
+  - [About Tokenizers](#about-tokenizers)
+    - [When to Use a CharFilter vs. a TokenFilter](#when-to-use-a-charfilter-vs-a-tokenfilter)
+- [Language Analysis](#language-analysis)
+  - [Language-Specific Factories](#language-specific-factories)
+    - [Japanese](#japanese)
+- [Phonetic Matching](#phonetic-matching)
+- [Reindexing](#reindexing)
+  - [Changes that Require Reindex](#changes-that-require-reindex)
+  - [Schema Changes](#schema-changes)
+    - [Solrconfig Changes](#solrconfig-changes)
+  - [Reindexing Strategies](#reindexing-strategies)
+
 # Schema Elements
 
 ## Unique Key
