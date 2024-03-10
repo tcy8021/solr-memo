@@ -1,3 +1,6 @@
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
 - [Taking Solr to Production](#taking-solr-to-production)
   - [Fine-Tune Your Production Setup](#fine-tune-your-production-setup)
     - [Override Settings in solrconfig.xml](#override-settings-in-solrconfigxml)

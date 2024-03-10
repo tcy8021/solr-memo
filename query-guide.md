@@ -1,3 +1,6 @@
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
 - [Common Query Parameters](#common-query-parameters)
 - [Dense Vector Search](#dense-vector-search)
   - [Index Time](#index-time)

@@ -1,3 +1,6 @@
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
 - [Schema Elements](#schema-elements)
   - [Unique Key](#unique-key)
   - [Similarity](#similarity)

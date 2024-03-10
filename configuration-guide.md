@@ -1,3 +1,6 @@
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
 - [Solr Configuration Files](#solr-configuration-files)
 - [Index Location and Format](#index-location-and-format)
 - [Index Segments and Merging](#index-segments-and-merging)
